@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
     private loggerService: LoggerService,
     private dataService: DataService
   ) {
-    
+    this.loggerService.log('Creating the dashboard!');
   }
 
   ngOnInit() {

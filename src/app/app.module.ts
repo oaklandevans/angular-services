@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AddBookComponent } from './add-book/add-book.component';
 import { AddReaderComponent } from './add-reader/add-reader.component';
@@ -21,12 +22,13 @@ import { dataServiceFactory } from './core/data.service.factory';
     AddBookComponent,
     EditReaderComponent,
     EditBookComponent,
-    AddReaderComponent
+    AddReaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [
     DataService,
